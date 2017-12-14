@@ -1,3 +1,3 @@
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "You let me go :(";
+ }
