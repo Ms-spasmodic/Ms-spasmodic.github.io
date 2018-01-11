@@ -15,11 +15,12 @@
         
         function typeWriter() {
           if (i < txt.length) {
-            document.getElementById("demo").innerHTML += txt.charAt(i);
+            document.getElementById("Type").innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
           }
-        }</script>
+        }
+</script>
 
 </head><!-- any info about the content should go in the header-->
 <p>This is a paragraph.</p>
@@ -29,6 +30,6 @@
 <button type="button" onclick="myFunction()">
     This will change the paragraph when clicked</button>
 <p id ="demo">Don't let me go!!!</p>
-<p id ="Type"> </p>
+<p id ="Type"></p>
 </body>
 </html>
