@@ -2,41 +2,43 @@
 <!-- This is a comment, im trying to learn twenty different things -->
 <!-- less than = &lt;, greater than = &gt;, ampersand(&) == &amp;-->
 <html lang="en"><!-- declares the language the site is in-->
-<body>
 <head><!-- can contain following info: page title, char encoding, meta info, style sheets. javascript-->
-    <meta charset="utf-8"><!--defines character encoding-->
-    <title>My Website thing!</title>
-    <link rel="Site"
-        href="https://ms-spasmodic.tumblr.com">
-<script src="javascript/Practice.js"></script>
-<link rel="stylesheet" type="text/css" href="Index.css">
-<script>var i = 0;
+  <meta charset="utf-8"><!--defines character encoding-->
+  <script src="javascript/Practice.js"></script>
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  <link rel="Site" href="https://ms-spasmodic.tumblr.com">
+  <title>My Website thing!</title>
+
+  <script>  
+      function typeWriter() {
+        var i = 0;
         var txt = 'Lorem ipsum dummy text blabla.';
         var speed = 50;
-        
-        function typeWriter() {
-          if (i < txt.length) {
-            document.getElementById("Type").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-          }
+        if (i < txt.length) {
+          document.getElementById("Type").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
         }
-</script>
-
+      }
+  </script>
 </head><!-- any info about the content should go in the header-->
-<h1>This is my website.</h1>
-<p>Hello! I'm trying different things to better learn/ understand html-css-js.</p>
-<p>This is another paragraph.</p>
-<p>thats really useful &amp; great hrmmm</p>
-<p>Working on my html skillz</p>
 
-<button type="button" onclick="myFunction()">
-    This will change the paragraph when clicked</button>
-    <button type="button" onclick="typeWriter()">
-            Gonna type some stuff</button>
+<body>
+  <h1>This is my website.</h1>
+  <p>Hello! I'm trying different things to better learn/ understand html-css-js.</p>
+  <p>This is another paragraph.</p>
+  <p>thats really useful &amp; great hrmmm</p>
+  <p>Working on my html skillz</p>
+
+  <button type="button" onclick="myFunction()">
+      This will change the paragraph when clicked</button>
+      <button type="button" onclick="typeWriter()">
+             Gonna type some stuff</button>
 
 
-<p id ="demo">Don't let me go!!!</p>
-<p id ="Type"></p>
+  <p id ="demo">Don't let me go!!!</p>
+  <p id ="Type"></p>
 </body>
+
+
 </html>
