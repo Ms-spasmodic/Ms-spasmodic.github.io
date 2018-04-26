@@ -1,16 +1,17 @@
-h1{
+*{
     text-align: center;
+}
+h1{
+    
     color: purple;
 }
 
 p{
-    text-align: center;
+    
     color:lightpink;
 
 }
-body{
-    background-color:lightgrey; 
-}
+
 #demo{
     background-color: red;
 }
