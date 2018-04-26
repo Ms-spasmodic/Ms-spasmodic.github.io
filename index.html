@@ -8,19 +8,6 @@
   <link rel="stylesheet" type="text/css" href="Index.css">
   <link rel="Site" href="https://ms-spasmodic.tumblr.com">
   <title>My Website thing!</title>
-
-  <script>  
-      function typeWriter() {
-        var i = 0;
-        var txt = 'Lorem ipsum dummy text blabla.';
-        var speed = 50;
-        if (i < txt.length) {
-          document.getElementById("Type").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-  </script>
 </head><!-- any info about the content should go in the header-->
 
 <body>
@@ -30,12 +17,8 @@
   <p>thats really useful &amp; great hrmmm</p>
   <p>Working on my html skillz</p>
 
-  <button type="button" onclick="myFunction()">
-      This will change the paragraph when clicked</button>
-      <button type="button" onclick="typeWriter()">
-             Gonna type some stuff</button>
-
-
+  <button type="button" onclick="myFunction()"> This will change the paragraph when clicked</button>
+  <button type="button" onclick="typeWriter()"> Gonna type some stuff</button>
   <p id ="demo">Don't let me go!!!</p>
   <p id ="Type"></p>
 </body>
